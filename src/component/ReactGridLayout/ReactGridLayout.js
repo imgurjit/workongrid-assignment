@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useMemo, createRef, useEffect } from "react";
 import { useIsVisible } from "../../useVisible";
 import inWords from "../../misc";

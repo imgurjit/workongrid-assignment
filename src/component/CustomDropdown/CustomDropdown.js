@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { ReactComponent as ArrowDown } from "../../assets/arrowDown.svg";
 import { ReactComponent as ArrowUp } from "../../assets/arrowUp.svg";
@@ -20,6 +21,7 @@ const Dropdown = ({ name, title, list, select, onChange, id, searchable }) => {
     if (select) {
       selectSingleItem(select);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [select]);
 
   const selectSingleItem = (item) => {

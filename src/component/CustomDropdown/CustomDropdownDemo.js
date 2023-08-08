@@ -3,7 +3,7 @@ import Dropdown from "./CustomDropdown";
 import DropdownMultiple from "./CustomMultipleDropdown";
 
 const CustomDropdownDemo = () => {
-  const [fruits, setLocations] = useState([
+  const [fruits] = useState([
     {
       label: "Apple",
       value: "apple",
