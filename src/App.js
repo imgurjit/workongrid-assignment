@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import ReactGridLayout from "./component/ReactGridLayout/ReactGridLayout";
+import CustomDropdownDemo from "./component/CustomDropdown/CustomDropdownDemo";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="App">
+        <Link to="/q1">Click to view React Grid question Demo</Link>
+        <Link to="/q2">Click to view Dropdown question Demo</Link>
+      </div>
+      <Routes>
+        <Route
+          path="/q1"
+          element={
+            <ReactGridLayout columns={3} noOfBoxes={20}></ReactGridLayout>
+          }
+        />
+        <Route path="/q2" element={<CustomDropdownDemo></CustomDropdownDemo>} />
+      </Routes>
     </div>
   );
 }
