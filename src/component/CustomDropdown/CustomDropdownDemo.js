@@ -39,7 +39,7 @@ const CustomDropdownDemo = () => {
   ]);
 
   const onChange = (item, name) => {
-    console.log("On Change called--------------------");
+    console.log("On Selection Change");
     console.log(item, name);
   };
 
